@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC3636B5-56DF-4080-B44B-7F5F05A1CB06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TesteOO</RootNamespace>
+    <AssemblyName>TesteOO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anotações\Anotacoes.cs" />
+    <Compile Include="BrasFut\FormFutebol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrasFut\FormFutebol.Designer.cs">
+      <DependentUpon>FormFutebol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrasFut\Jogador.cs" />
+    <Compile Include="BrasFut\TimeFactory.cs" />
+    <Compile Include="BrasFut\Perna.cs" />
+    <Compile Include="Familia\FormFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Familia\FormFamilia.Designer.cs">
+      <DependentUpon>FormFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Familia\Membros.cs" />
+    <Compile Include="Anotações\FormAnotações.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anotações\FormAnotações.Designer.cs">
+      <DependentUpon>FormAnotações.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prova 02.07\Prova.cs" />
+    <Compile Include="Prova 02.07\FormProva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prova 02.07\FormProva.Designer.cs">
+      <DependentUpon>FormProva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brasileiros\Brasileiro.cs" />
+    <Compile Include="Carros\FormCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carros\FormCarro.Designer.cs">
+      <DependentUpon>FormCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContaBanco\FormBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContaBanco\FormBanco.Designer.cs">
+      <DependentUpon>FormBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estacionamento\Estacionamento.cs" />
+    <Compile Include="Estacionamento\FormEstacionamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estacionamento\FormEstacionamento.Designer.cs">
+      <DependentUpon>FormEstacionamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estacionamento\Ocupante.cs" />
+    <Compile Include="Estacionamento\TipoVaga.cs" />
+    <Compile Include="Estacionamento\Vaga.cs" />
+    <Compile Include="Estacionamento\VagaFactory.cs" />
+    <Compile Include="Forma Geometrica\FormTriangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma Geometrica\FormTriangulo.Designer.cs">
+      <DependentUpon>FormTriangulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo\FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jogo\FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jogo\Hero.cs" />
+    <Compile Include="Jogo\IMageSkills.cs" />
+    <Compile Include="Jogo\IWarriorSkills.cs" />
+    <Compile Include="Jogo\LadosMaos.cs" />
+    <Compile Include="Jogo\Mage.cs" />
+    <Compile Include="Jogo\SourceDamage.cs" />
+    <Compile Include="Jogo\Bag.cs" />
+    <Compile Include="Jogo\Item.cs" />
+    <Compile Include="Jogo\Warrior.cs" />
+    <Compile Include="Moça\Cabelo.cs" />
+    <Compile Include="Carros\Carro.cs" />
+    <Compile Include="ContaBanco\ContaBancaria.cs" />
+    <Compile Include="Moça\CorCabelo.cs" />
+    <Compile Include="Moça\CorOlhos.cs" />
+    <Compile Include="Moça\Etnia.cs" />
+    <Compile Include="Moça\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moça\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moça\Genero.cs" />
+    <Compile Include="Carros\Motor.cs" />
+    <Compile Include="ContaBanco\OperacaoBancaria.cs" />
+    <Compile Include="Moça\Profissional.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ContaBanco\RespostaOperacaoBancaria.cs" />
+    <Compile Include="Santos\FormSilvio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Santos\FormSilvio.Designer.cs">
+      <DependentUpon>FormSilvio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Santos\SilvioSantosCurse.cs" />
+    <Compile Include="Moça\Tamanho.cs" />
+    <Compile Include="Moça\TipoCabelo.cs" />
+    <Compile Include="Forma Geometrica\TipoTriangulo.cs" />
+    <Compile Include="Forma Geometrica\Triangulo.cs" />
+    <EmbeddedResource Include="BrasFut\FormFutebol.resx">
+      <DependentUpon>FormFutebol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carros\FormCarro.resx">
+      <DependentUpon>FormCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContaBanco\FormBanco.resx">
+      <DependentUpon>FormBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estacionamento\FormEstacionamento.resx">
+      <DependentUpon>FormEstacionamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Familia\FormFamilia.resx">
+      <DependentUpon>FormFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anotações\FormAnotações.resx">
+      <DependentUpon>FormAnotações.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jogo\FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moça\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma Geometrica\FormTriangulo.resx">
+      <DependentUpon>FormTriangulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Prova 02.07\FormProva.resx">
+      <DependentUpon>FormProva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Santos\FormSilvio.resx">
+      <DependentUpon>FormSilvio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
